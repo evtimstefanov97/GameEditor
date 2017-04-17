@@ -1,0 +1,5 @@
+C:\Users\Evtim\documents\visual studio 2015\Projects\GameEditor\GameEditorModels\bin\Debug\GameEditorModels.dll
+C:\Users\Evtim\documents\visual studio 2015\Projects\GameEditor\GameEditorModels\bin\Debug\GameEditorModels.pdb
+C:\Users\Evtim\documents\visual studio 2015\Projects\GameEditor\GameEditorModels\obj\Debug\GameEditorModels.csprojResolveAssemblyReference.cache
+C:\Users\Evtim\documents\visual studio 2015\Projects\GameEditor\GameEditorModels\obj\Debug\GameEditorModels.dll
+C:\Users\Evtim\documents\visual studio 2015\Projects\GameEditor\GameEditorModels\obj\Debug\GameEditorModels.pdb

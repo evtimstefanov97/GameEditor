@@ -1,0 +1,106 @@
+﻿<Page x:Class="GameEditor.NewGame"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GameEditor"
+      mc:Ignorable="d"
+      d:DesignHeight="400" d:DesignWidth="600"
+      Title="NewGame" Opacity="1" Background="Gray">
+
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*">
+            </RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="button" Content="Save game"  Margin="254,18,96,19" Grid.Column="1" Grid.Row="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="100" Height="20" Click="AddNewGame"/>
+        <DatePicker  Margin="25,39,269,10" x:Name="DateCreated" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="150"/>
+        <Slider x:Name="Rating" Margin="11,26,4,4"  RenderTransformOrigin="0.5,0.5" Grid.Column="1" Grid.Row="1" Maximum="100" TickPlacement="BottomRight" TickFrequency="5"   IsSnapToTickEnabled="True"   HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Slider.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Slider.RenderTransform>
+        </Slider>
+
+        <TextBlock x:Name="textBlock"  Margin="63,15,297,35" TextWrapping="Wrap" Text="Date Created" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="90" />
+        <TextBlock x:Name="textBlock1"  Margin="189,12,191,15" TextWrapping="Wrap" Text="Rate game" Grid.Column="1" Grid.Row="1" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="70" Height="30"/>
+
+
+
+
+
+        <TextBlock x:Name="textBlock2" Margin="209,5,191,5" TextWrapping="Wrap" Text="Title"  Grid.Column="1"  VerticalAlignment="Stretch" Width="50"/>
+        <TextBox x:Name="Title" Margin="10,24,10,11" TextWrapping="Wrap" Text=""  Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="450" Height="40" />
+        <ComboBox x:Name="CompanyBox"  Margin="316,16,34,21"  ItemsSource="{Binding Path=companies}" DisplayMemberPath="Name" SelectedValuePath="Id" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="100" Height="20"/>
+        <ComboBox x:Name="GenreBox"  Margin="80,16,270,21" ItemsSource="{Binding Path=genres}" DisplayMemberPath="Name" SelectedValuePath="Id" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="100" Height="20"/>
+        <TextBlock x:Name="textBlock3"  Margin="17,16,383,21" TextWrapping="Wrap" Text="Genre"  Grid.Column="1" Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="50" Height="20"/>
+        <TextBlock x:Name="textBlock4"  Margin="236,16,159,21" TextWrapping="Wrap" Text="Company"  Grid.Column="1" Grid.Row="3" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Width="55" Height="20">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.238"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <Border Grid.Row="3" Grid.Column="1" BorderBrush="black"  BorderThickness="1"></Border>
+        <Border Grid.Row="2" Grid.Column="1" BorderBrush="black"  BorderThickness="1">
+
+        </Border>
+        <Border Grid.Row="1" Grid.Column="1" BorderBrush="black"  BorderThickness="1"></Border>
+        <Border Grid.Row="0" Grid.Column="1" BorderBrush="black"  BorderThickness="1"/>
+        <Border Grid.Row="4" Grid.Column="1" BorderBrush="black"  BorderThickness="1">
+
+        </Border>
+
+
+        <Button x:Name="Reset" Content="Reset"  Margin="82,18,268,19" Grid.Column="1" Grid.Row="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="100" Height="20" Click="ResetGame" />
+        <TextBlock x:Name="textBlock5" HorizontalAlignment="Stretch" Margin="197,7,171,61" Grid.Row="4" TextWrapping="Wrap" Text="Description"  Grid.Column="1" Width="82" Height="20"/>
+        <TextBox x:Name="Description" TextWrapping="Wrap" Text="TextBox" Margin="10,30,10,10" Grid.Row="4" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Width="420" Height="50"/>
+        <TextBlock x:Name="textBlock6" Grid.Column="1" HorizontalAlignment="Stretch" Margin="276,15,33,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Stretch" Width="141"><Run Text="Original retail price"/></TextBlock>
+        <TextBox x:Name="Price" TextWrapping="Wrap" Text="TextBox" Grid.Column="1" Margin="265,39,59,22" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="80"/>
+        <TextBlock x:Name="textBlock7" HorizontalAlignment="Stretch" Margin="54,81,26,0" Grid.Row="4" TextWrapping="Wrap" Text="Add Image" VerticalAlignment="Stretch" Grid.RowSpan="2" Width="70"/>
+        <Button x:Name="AddImage"   HorizontalAlignment="Stretch" Margin="54,35,34,5" Grid.Row="4" VerticalAlignment="Stretch"  Width="62" Height="46" RenderTransformOrigin="0.5,0.5" Click="ImageSelect">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Red"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+
+        </Button>
+        <Image x:Name="ImageToImport" Source="{Binding Image}" HorizontalAlignment="Stretch" Height="142" Margin="2,1,0,0" Grid.Row="2" Grid.RowSpan="2" VerticalAlignment="Stretch" Width="148"/>
+
+    </Grid>
+
+
+</Page>
