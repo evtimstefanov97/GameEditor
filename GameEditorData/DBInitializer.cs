@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace GameEditorData
 {
     using GameEditorModels;
-    public class DBInitializer :DropCreateDatabaseAlways<GameEditorContext>
+    public class DBInitializer :CreateDatabaseIfNotExists<GameEditorContext>
     {
         protected override void Seed(GameEditorContext context)
         {
