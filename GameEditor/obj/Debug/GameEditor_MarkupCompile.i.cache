@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Evtim\documents\visual studio 2015\Projects\GameEditor\GameEditor\obj\Debug\
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditor\obj\Debug\
 GameEditor
 none
 false
 DEBUG;TRACE
-C:\Users\Evtim\documents\visual studio 2015\Projects\GameEditor\GameEditor\App.xaml
-2-745211428
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditor\App.xaml
+4-51556513
 
-10-857622331
-15-1353628877
-MainWindow.xaml;NewGame.xaml;
+13-558723656
+161814825525
+GameEditWindow.xaml;GameSearch.xaml;MainWindow.xaml;NewGame.xaml;
 
 True
 

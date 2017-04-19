@@ -38,6 +38,12 @@ namespace GameEditor
 
         }
 
+        private void GameSearch(object sender, RoutedEventArgs e)
+        {
+            Main.Content=new GameSearch();
+            expander.IsExpanded = false;
+        }
+
         
     }
 }

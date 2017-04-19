@@ -4,9 +4,11 @@ C:\Users\Evtim\documents\visual studio 2015\Projects\GameEditor\GameEditorData\b
 C:\Users\Evtim\documents\visual studio 2015\Projects\GameEditor\GameEditorData\bin\Debug\EntityFramework.dll
 C:\Users\Evtim\documents\visual studio 2015\Projects\GameEditor\GameEditorData\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Evtim\documents\visual studio 2015\Projects\GameEditor\GameEditorData\bin\Debug\GameEditorModels.dll
+C:\Users\Evtim\documents\visual studio 2015\Projects\GameEditor\GameEditorData\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Evtim\documents\visual studio 2015\Projects\GameEditor\GameEditorData\bin\Debug\GameEditorModels.pdb
 C:\Users\Evtim\documents\visual studio 2015\Projects\GameEditor\GameEditorData\bin\Debug\EntityFramework.xml
 C:\Users\Evtim\documents\visual studio 2015\Projects\GameEditor\GameEditorData\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Evtim\documents\visual studio 2015\Projects\GameEditor\GameEditorData\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Evtim\documents\visual studio 2015\Projects\GameEditor\GameEditorData\obj\Debug\GameEditorData.csprojResolveAssemblyReference.cache
 C:\Users\Evtim\documents\visual studio 2015\Projects\GameEditor\GameEditorData\obj\Debug\GameEditorData.dll
 C:\Users\Evtim\documents\visual studio 2015\Projects\GameEditor\GameEditorData\obj\Debug\GameEditorData.pdb

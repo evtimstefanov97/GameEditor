@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GameEditor"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="625" Background="DarkOrange" Opacity="0.96">
+        Title="MainWindow" Height="525" Width="625" Background="DarkOrange" Opacity="0.96">
     <Grid x:Name="Root">
        
         <Grid x:Name="MainGrid" Grid.Column="0">
@@ -14,7 +14,7 @@
         <Expander x:Name="expander" Header="Menu" HorizontalAlignment="Left" VerticalAlignment="Top" IsExpanded="False"  >
             <StackPanel Margin="-1,4,0,0"  Width="{Binding ActualWidth,ElementName=Root}">
                 <Button Margin="4" Content="New game.." Click="NewGame" />
-                <Button Margin="4" Content="Games search.." />
+                <Button Margin="4" Content="Games search.." Click="GameSearch"/>
             </StackPanel>
           
         </Expander>

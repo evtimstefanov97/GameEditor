@@ -29,23 +29,11 @@ namespace GameEditor
     /// </summary>
     /// 
     /// 
-    public class ViewModel
-    {
-        public ViewModel()
-        {
-            this.genres=new ObservableCollection<Genre>();
-            this.companies=new ObservableCollection<GameCompany>();
-            store=new GameStore();
-        }
-        public GameStore store { get; set; }
-
-        public ObservableCollection<Genre> genres { get; set ; }
-            public  ObservableCollection<GameCompany> companies { get; set; }
-    }
+   
     public partial class NewGame : Page
     {
 
-        public ViewModel VM;
+        public static ViewModel VM;
         public NewGame()
         {
             ViewModel vm=new ViewModel();
@@ -78,47 +66,55 @@ namespace GameEditor
         private void AddNewGame(object sender, RoutedEventArgs e)
         {
             
-            Genre currentgenre = GenreBox.SelectedItem as Genre;
-            GameCompany currentCompany = CompanyBox.SelectedItem as GameCompany;
-          
-            if ( currentgenre == null || currentCompany == null ||
-                Description.Text == null || Price.Text == null || Price.Text.ToString().All(char.IsDigit) == false ||
-                Rating.Value == null || Title.Text == null)
+            Genre currentgenre = GenreNew.SelectedItem as Genre;
+            GameCompany currentCompany = CompanyNew.SelectedItem as GameCompany;
+            if (VM.store.isGameAlreadyExisting(Title.Text) == true)
             {
-                MessageBox.Show("Some of the input data is invalid!");
+                MessageBox.Show("A game with the same title already exists!");
+
             }
             else
             {
-                var currentcompanyid = VM.store.ReturnGameCompanyId(currentCompany.Name);
-                var currentgenreid = VM.store.ReturnGenreId(currentgenre.Name);
-                var imagefrombyte = BitmapSourceToByteArray((BitmapSource) ImageToImport.Source);
-                Game gametoadd = new Game()
+                if (currentgenre == null || currentCompany == null ||
+               Description.Text == null || Price.Text == null || Price.Text.ToString().All(char.IsDigit) == false ||
+               Rating.Value == null || Title.Text == null)
                 {
-                    CreatorCompany = currentCompany,
-                    CreatorCompanyId = currentcompanyid,
-                    DateCreated = DateTime.Parse(DateCreated.Text),
-                    Description = Description.Text,
-                    Genre = currentgenre,
-                    GenreId = currentgenreid,
-                    Price = float.Parse(Price.Text),
-                    Rate = (int)Rating.Value,
-                    Title = Title.Text,
-                    Image = imagefrombyte
-                };
+                    MessageBox.Show("Some of the input data is invalid!");
+                }
+                else
+                {
+                    var currentcompanyid = VM.store.ReturnGameCompanyId(currentCompany.Name);
+                    var currentgenreid = VM.store.ReturnGenreId(currentgenre.Name);
+                    var imagefrombyte = BitmapSourceToByteArray((BitmapSource)ImageToImport.Source);
+                    Game gametoadd = new Game()
+                    {
+                        CreatorCompany = currentCompany,
+                        CreatorCompanyId = currentcompanyid,
+                        DateCreated = DateTime.Parse(DateCreated.Text),
+                        Description = Description.Text,
+                        Genre = currentgenre,
+                        GenreId = currentgenreid,
+                        Price = float.Parse(Price.Text),
+                        Rate = (int)Rating.Value,
+                        Title = Title.Text,
+                        Image = imagefrombyte
+                    };
 
-                gametoadd.CreatorCompany.GamesProduced.Add(gametoadd);
-                gametoadd.Genre.GamesOfGenre.Add(gametoadd);
-                VM.store.AddGame(gametoadd);
-                MessageBox.Show("Game successfully added do database! :)");
-                Description.Text = String.Empty;
-                Price.Text = String.Empty;
-                Title.Text = String.Empty;
-                DateCreated.SelectedDate = DateTime.Now;
-                Rating.Value = 0;
-                ImageToImport.Source = null;
-                GenreBox.SelectedValue = null;
-                CompanyBox.SelectedValue = null;
+                    gametoadd.CreatorCompany.GamesProduced.Add(gametoadd);
+                    gametoadd.Genre.GamesOfGenre.Add(gametoadd);
+                    VM.store.AddGame(gametoadd);
+                    MessageBox.Show("Game successfully added do database! :)");
+                    Description.Text = String.Empty;
+                    Price.Text = String.Empty;
+                    Title.Text = String.Empty;
+                    DateCreated.SelectedDate = DateTime.Now;
+                    Rating.Value = 0;
+                    ImageToImport.Source = null;
+                    GenreNew.SelectedValue = null;
+                    CompanyNew.SelectedValue = null;
+                }
             }
+           
            
             
            
@@ -150,8 +146,8 @@ namespace GameEditor
             Rating.Value = 0;
             ImageToImport.Source = null;
            
-            GenreBox.SelectedValue = null;
-            CompanyBox.SelectedValue = null;
+            GenreNew.SelectedValue = null;
+            CompanyNew.SelectedValue = null;
         }
     }
 }
