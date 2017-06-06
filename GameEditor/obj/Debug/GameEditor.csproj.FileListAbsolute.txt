@@ -26,59 +26,43 @@ C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditor\bin\D
 C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditor\bin\Debug\GameEditor.pdb
 C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditor\obj\Debug\GameEditWindow.g.cs
 C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditor\obj\Debug\GameEditWindow.baml
-C:\Users\user\Desktop\GameEditor\GameEditor\bin\Debug\GameEditor.exe.config
-C:\Users\user\Desktop\GameEditor\GameEditor\obj\Debug\GameEditor.exe
-C:\Users\user\Desktop\GameEditor\GameEditor\obj\Debug\GameEditor.pdb
-C:\Users\user\Desktop\GameEditor\GameEditor\bin\Debug\GameEditor.exe
-C:\Users\user\Desktop\GameEditor\GameEditor\bin\Debug\GameEditor.pdb
-C:\Users\user\Desktop\GameEditor\GameEditor\bin\Debug\GameEditorData.dll
-C:\Users\user\Desktop\GameEditor\GameEditor\bin\Debug\GameEditorModels.dll
-C:\Users\user\Desktop\GameEditor\GameEditor\bin\Debug\Newtonsoft.Json.dll
-C:\Users\user\Desktop\GameEditor\GameEditor\bin\Debug\EntityFramework.dll
-C:\Users\user\Desktop\GameEditor\GameEditor\bin\Debug\GameEditorData.pdb
-C:\Users\user\Desktop\GameEditor\GameEditor\bin\Debug\GameEditorModels.pdb
-C:\Users\user\Desktop\GameEditor\GameEditor\bin\Debug\Newtonsoft.Json.xml
-C:\Users\user\Desktop\GameEditor\GameEditor\bin\Debug\EntityFramework.xml
-C:\Users\user\Desktop\GameEditor\GameEditor\obj\Debug\GameEditor.csprojResolveAssemblyReference.cache
-C:\Users\user\Desktop\GameEditor\GameEditor\obj\Debug\GameEditWindow.g.cs
-C:\Users\user\Desktop\GameEditor\GameEditor\obj\Debug\GameSearch.g.cs
-C:\Users\user\Desktop\GameEditor\GameEditor\obj\Debug\MainWindow.g.cs
-C:\Users\user\Desktop\GameEditor\GameEditor\obj\Debug\NewGame.g.cs
-C:\Users\user\Desktop\GameEditor\GameEditor\obj\Debug\App.g.cs
-C:\Users\user\Desktop\GameEditor\GameEditor\obj\Debug\GameEditor_MarkupCompile.cache
-C:\Users\user\Desktop\GameEditor\GameEditor\obj\Debug\GameEditor_MarkupCompile.lref
-C:\Users\user\Desktop\GameEditor\GameEditor\obj\Debug\GameEditWindow.baml
-C:\Users\user\Desktop\GameEditor\GameEditor\obj\Debug\GameSearch.baml
-C:\Users\user\Desktop\GameEditor\GameEditor\obj\Debug\MainWindow.baml
-C:\Users\user\Desktop\GameEditor\GameEditor\obj\Debug\NewGame.baml
-C:\Users\user\Desktop\GameEditor\GameEditor\obj\Debug\GameEditor.g.resources
-C:\Users\user\Desktop\GameEditor\GameEditor\obj\Debug\GameEditor.Properties.Resources.resources
-C:\Users\user\Desktop\GameEditor\GameEditor\obj\Debug\GameEditor.csproj.GenerateResource.Cache
-C:\Users\user\Desktop\GameEditorr\GameEditor\bin\Debug\GameEditor.exe.config
-C:\Users\user\Desktop\GameEditorr\GameEditor\obj\Debug\GameEditor.exe
-C:\Users\user\Desktop\GameEditorr\GameEditor\obj\Debug\GameEditor.pdb
-C:\Users\user\Desktop\GameEditorr\GameEditor\bin\Debug\GameEditor.exe
-C:\Users\user\Desktop\GameEditorr\GameEditor\bin\Debug\GameEditor.pdb
-C:\Users\user\Desktop\GameEditorr\GameEditor\bin\Debug\GameEditorData.dll
-C:\Users\user\Desktop\GameEditorr\GameEditor\bin\Debug\GameEditorModels.dll
-C:\Users\user\Desktop\GameEditorr\GameEditor\bin\Debug\Newtonsoft.Json.dll
-C:\Users\user\Desktop\GameEditorr\GameEditor\bin\Debug\EntityFramework.dll
-C:\Users\user\Desktop\GameEditorr\GameEditor\bin\Debug\GameEditorData.pdb
-C:\Users\user\Desktop\GameEditorr\GameEditor\bin\Debug\GameEditorModels.pdb
-C:\Users\user\Desktop\GameEditorr\GameEditor\bin\Debug\Newtonsoft.Json.xml
-C:\Users\user\Desktop\GameEditorr\GameEditor\bin\Debug\EntityFramework.xml
-C:\Users\user\Desktop\GameEditorr\GameEditor\obj\Debug\GameEditor.csprojResolveAssemblyReference.cache
-C:\Users\user\Desktop\GameEditorr\GameEditor\obj\Debug\GameEditWindow.g.cs
-C:\Users\user\Desktop\GameEditorr\GameEditor\obj\Debug\GameSearch.g.cs
-C:\Users\user\Desktop\GameEditorr\GameEditor\obj\Debug\MainWindow.g.cs
-C:\Users\user\Desktop\GameEditorr\GameEditor\obj\Debug\NewGame.g.cs
-C:\Users\user\Desktop\GameEditorr\GameEditor\obj\Debug\App.g.cs
-C:\Users\user\Desktop\GameEditorr\GameEditor\obj\Debug\GameEditor_MarkupCompile.cache
-C:\Users\user\Desktop\GameEditorr\GameEditor\obj\Debug\GameEditor_MarkupCompile.lref
-C:\Users\user\Desktop\GameEditorr\GameEditor\obj\Debug\GameEditWindow.baml
-C:\Users\user\Desktop\GameEditorr\GameEditor\obj\Debug\GameSearch.baml
-C:\Users\user\Desktop\GameEditorr\GameEditor\obj\Debug\MainWindow.baml
-C:\Users\user\Desktop\GameEditorr\GameEditor\obj\Debug\NewGame.baml
-C:\Users\user\Desktop\GameEditorr\GameEditor\obj\Debug\GameEditor.g.resources
-C:\Users\user\Desktop\GameEditorr\GameEditor\obj\Debug\GameEditor.Properties.Resources.resources
-C:\Users\user\Desktop\GameEditorr\GameEditor\obj\Debug\GameEditor.csproj.GenerateResource.Cache
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditor\bin\Debug\GameEditor.exe.manifest
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditor\bin\Debug\GameEditor.application
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditor\obj\Debug\GameEditor.exe.manifest
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditor\obj\Debug\GameEditor.application
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditor\bin\Debug\App.config
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditor\obj\Debug\GameEditor_Content.g.cs
+E:\VS2015_Projects\GameEditor\GameEditor\bin\Debug\GameEditor.exe.config
+E:\VS2015_Projects\GameEditor\GameEditor\obj\Debug\GameEditor.exe
+E:\VS2015_Projects\GameEditor\GameEditor\obj\Debug\GameEditor.pdb
+E:\VS2015_Projects\GameEditor\GameEditor\bin\Debug\App.config
+E:\VS2015_Projects\GameEditor\GameEditor\bin\Debug\GameEditor.exe.manifest
+E:\VS2015_Projects\GameEditor\GameEditor\bin\Debug\GameEditor.application
+E:\VS2015_Projects\GameEditor\GameEditor\bin\Debug\GameEditor.exe
+E:\VS2015_Projects\GameEditor\GameEditor\bin\Debug\GameEditor.pdb
+E:\VS2015_Projects\GameEditor\GameEditor\bin\Debug\GameEditorData.dll
+E:\VS2015_Projects\GameEditor\GameEditor\bin\Debug\GameEditorModels.dll
+E:\VS2015_Projects\GameEditor\GameEditor\bin\Debug\Newtonsoft.Json.dll
+E:\VS2015_Projects\GameEditor\GameEditor\bin\Debug\EntityFramework.dll
+E:\VS2015_Projects\GameEditor\GameEditor\bin\Debug\GameEditorData.pdb
+E:\VS2015_Projects\GameEditor\GameEditor\bin\Debug\GameEditorModels.pdb
+E:\VS2015_Projects\GameEditor\GameEditor\bin\Debug\Newtonsoft.Json.xml
+E:\VS2015_Projects\GameEditor\GameEditor\bin\Debug\EntityFramework.xml
+E:\VS2015_Projects\GameEditor\GameEditor\obj\Debug\GameEditor.csprojResolveAssemblyReference.cache
+E:\VS2015_Projects\GameEditor\GameEditor\obj\Debug\GameEditWindow.g.cs
+E:\VS2015_Projects\GameEditor\GameEditor\obj\Debug\GameSearch.g.cs
+E:\VS2015_Projects\GameEditor\GameEditor\obj\Debug\MainWindow.g.cs
+E:\VS2015_Projects\GameEditor\GameEditor\obj\Debug\NewGame.g.cs
+E:\VS2015_Projects\GameEditor\GameEditor\obj\Debug\App.g.cs
+E:\VS2015_Projects\GameEditor\GameEditor\obj\Debug\GameEditor_Content.g.cs
+E:\VS2015_Projects\GameEditor\GameEditor\obj\Debug\GameEditor_MarkupCompile.cache
+E:\VS2015_Projects\GameEditor\GameEditor\obj\Debug\GameEditor_MarkupCompile.lref
+E:\VS2015_Projects\GameEditor\GameEditor\obj\Debug\GameEditWindow.baml
+E:\VS2015_Projects\GameEditor\GameEditor\obj\Debug\GameSearch.baml
+E:\VS2015_Projects\GameEditor\GameEditor\obj\Debug\MainWindow.baml
+E:\VS2015_Projects\GameEditor\GameEditor\obj\Debug\NewGame.baml
+E:\VS2015_Projects\GameEditor\GameEditor\obj\Debug\GameEditor.g.resources
+E:\VS2015_Projects\GameEditor\GameEditor\obj\Debug\GameEditor.Properties.Resources.resources
+E:\VS2015_Projects\GameEditor\GameEditor\obj\Debug\GameEditor.csproj.GenerateResource.Cache
+E:\VS2015_Projects\GameEditor\GameEditor\obj\Debug\GameEditor.exe.manifest
+E:\VS2015_Projects\GameEditor\GameEditor\obj\Debug\GameEditor.application

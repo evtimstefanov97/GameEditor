@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Globalization;
@@ -33,11 +33,11 @@ namespace GameEditor
     public partial class NewGame : Page
     {
 
-        private static ViewModel VM;
+        private static ViewModel vm= new ViewModel();
         public NewGame()
         {
-            ViewModel vm=new ViewModel();
-            VM = vm;
+           
+
             vm.genres = new ObservableCollection<Genre>(vm.store.ReturnGenres());
             vm.companies = new ObservableCollection<GameCompany>(vm.store.ReturnCompanies());
             InitializeComponent();
@@ -68,7 +68,7 @@ namespace GameEditor
             
             Genre currentgenre = GenreNew.SelectedItem as Genre;
             GameCompany currentCompany = CompanyNew.SelectedItem as GameCompany;
-            if (VM.store.isGameAlreadyExisting(Title.Text) == true)
+            if (vm.store.isGameAlreadyExisting(Title.Text) == true)
             {
                 MessageBox.Show("A game with the same title already exists!");
 
@@ -83,8 +83,8 @@ namespace GameEditor
                 }
                 else
                 {
-                    var currentcompanyid = VM.store.ReturnGameCompanyId(currentCompany.Name);
-                    var currentgenreid = VM.store.ReturnGenreId(currentgenre.Name);
+                    var currentcompanyid = vm.store.ReturnGameCompanyId(currentCompany.Name);
+                    var currentgenreid = vm.store.ReturnGenreId(currentgenre.Name);
                     var imagefrombyte = BitmapSourceToByteArray((BitmapSource)ImageToImport.Source);
                     Game gametoadd = new Game()
                     {
@@ -102,7 +102,7 @@ namespace GameEditor
 
                     gametoadd.CreatorCompany.GamesProduced.Add(gametoadd);
                     gametoadd.Genre.GamesOfGenre.Add(gametoadd);
-                    VM.store.AddGame(gametoadd);
+                    vm.store.AddGame(gametoadd);
                     MessageBox.Show("Game successfully added do database! :)");
                     Description.Text = String.Empty;
                     Price.Text = String.Empty;

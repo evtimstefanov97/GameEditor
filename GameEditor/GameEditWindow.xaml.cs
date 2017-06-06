@@ -21,6 +21,8 @@ namespace GameEditor
     /// Interaction logic for GameEditWindow.xaml
     /// </summary>
     /// 
+    /// 
+    /// 
     public partial class GameEditWindow : Window
     {
         public class EditModel
@@ -33,9 +35,11 @@ namespace GameEditor
             public ObservableCollection<Genre> genres { get; set; }
             public ObservableCollection<GameCompany> companies { get; set; }
         }
-        public Game gameforsave;   
-        public EditModel em = new EditModel();
-        public GameStore localstore;
+
+        private Game gameforsave;
+        private EditModel em=new EditModel();
+        private GameStore localstore;
+       
         public GameEditWindow(Game gameforedit,GameStore store)
         {
             localstore = store;

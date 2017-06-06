@@ -11,7 +11,7 @@
         <Grid x:Name="MainGrid" Grid.Column="0">
             
         
-        <Expander x:Name="expander" Header="Menu" HorizontalAlignment="stretch" VerticalAlignment="Stretch" IsExpanded="False"  >
+        <Expander x:Name="expander" Header="Menu" HorizontalAlignment="Left" VerticalAlignment="Top" IsExpanded="False"  >
             <StackPanel Margin="-1,4,0,0"  Width="{Binding ActualWidth,ElementName=Root}">
                 <Button Margin="4" Content="New game.." Click="NewGame" />
                 <Button Margin="4" Content="Games search.." Click="GameSearch"/>

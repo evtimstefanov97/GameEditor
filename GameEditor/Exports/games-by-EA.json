@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "newgamechanged",
+    "Price": 55.0,
+    "Rating": 20,
+    "CreatedBy": "EA",
+    "Genre": "Arcade"
+  },
+  {
+    "Name": "fdsafasd",
+    "Price": 45.0,
+    "Rating": 20,
+    "CreatedBy": "EA",
+    "Genre": "Arcade"
+  }
+]

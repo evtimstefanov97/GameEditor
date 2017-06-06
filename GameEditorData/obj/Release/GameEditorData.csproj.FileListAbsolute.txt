@@ -1,0 +1,14 @@
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditorData\bin\Release\GameEditorData.dll.config
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditorData\bin\Release\GameEditorData.dll
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditorData\bin\Release\GameEditorData.pdb
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditorData\bin\Release\EntityFramework.dll
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditorData\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditorData\bin\Release\GameEditorModels.dll
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditorData\bin\Release\Newtonsoft.Json.dll
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditorData\bin\Release\GameEditorModels.pdb
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditorData\bin\Release\EntityFramework.xml
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditorData\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditorData\bin\Release\Newtonsoft.Json.xml
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditorData\obj\Release\GameEditorData.csprojResolveAssemblyReference.cache
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditorData\obj\Release\GameEditorData.dll
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditorData\obj\Release\GameEditorData.pdb

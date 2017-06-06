@@ -12,31 +12,17 @@ C:\Users\Evtim\documents\visual studio 2015\Projects\GameEditor\GameEditorData\b
 C:\Users\Evtim\documents\visual studio 2015\Projects\GameEditor\GameEditorData\obj\Debug\GameEditorData.csprojResolveAssemblyReference.cache
 C:\Users\Evtim\documents\visual studio 2015\Projects\GameEditor\GameEditorData\obj\Debug\GameEditorData.dll
 C:\Users\Evtim\documents\visual studio 2015\Projects\GameEditor\GameEditorData\obj\Debug\GameEditorData.pdb
-C:\Users\user\Desktop\GameEditor\GameEditorData\bin\Debug\GameEditorData.dll.config
-C:\Users\user\Desktop\GameEditor\GameEditorData\bin\Debug\GameEditorData.dll
-C:\Users\user\Desktop\GameEditor\GameEditorData\bin\Debug\GameEditorData.pdb
-C:\Users\user\Desktop\GameEditor\GameEditorData\bin\Debug\EntityFramework.dll
-C:\Users\user\Desktop\GameEditor\GameEditorData\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\user\Desktop\GameEditor\GameEditorData\bin\Debug\GameEditorModels.dll
-C:\Users\user\Desktop\GameEditor\GameEditorData\bin\Debug\Newtonsoft.Json.dll
-C:\Users\user\Desktop\GameEditor\GameEditorData\bin\Debug\GameEditorModels.pdb
-C:\Users\user\Desktop\GameEditor\GameEditorData\bin\Debug\EntityFramework.xml
-C:\Users\user\Desktop\GameEditor\GameEditorData\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\user\Desktop\GameEditor\GameEditorData\bin\Debug\Newtonsoft.Json.xml
-C:\Users\user\Desktop\GameEditor\GameEditorData\obj\Debug\GameEditorData.csprojResolveAssemblyReference.cache
-C:\Users\user\Desktop\GameEditor\GameEditorData\obj\Debug\GameEditorData.dll
-C:\Users\user\Desktop\GameEditor\GameEditorData\obj\Debug\GameEditorData.pdb
-C:\Users\user\Desktop\GameEditorr\GameEditorData\bin\Debug\GameEditorData.dll.config
-C:\Users\user\Desktop\GameEditorr\GameEditorData\bin\Debug\GameEditorData.dll
-C:\Users\user\Desktop\GameEditorr\GameEditorData\bin\Debug\GameEditorData.pdb
-C:\Users\user\Desktop\GameEditorr\GameEditorData\bin\Debug\EntityFramework.dll
-C:\Users\user\Desktop\GameEditorr\GameEditorData\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\user\Desktop\GameEditorr\GameEditorData\bin\Debug\GameEditorModels.dll
-C:\Users\user\Desktop\GameEditorr\GameEditorData\bin\Debug\Newtonsoft.Json.dll
-C:\Users\user\Desktop\GameEditorr\GameEditorData\bin\Debug\GameEditorModels.pdb
-C:\Users\user\Desktop\GameEditorr\GameEditorData\bin\Debug\EntityFramework.xml
-C:\Users\user\Desktop\GameEditorr\GameEditorData\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\user\Desktop\GameEditorr\GameEditorData\bin\Debug\Newtonsoft.Json.xml
-C:\Users\user\Desktop\GameEditorr\GameEditorData\obj\Debug\GameEditorData.csprojResolveAssemblyReference.cache
-C:\Users\user\Desktop\GameEditorr\GameEditorData\obj\Debug\GameEditorData.dll
-C:\Users\user\Desktop\GameEditorr\GameEditorData\obj\Debug\GameEditorData.pdb
+E:\VS2015_Projects\GameEditor\GameEditorData\bin\Debug\GameEditorData.dll.config
+E:\VS2015_Projects\GameEditor\GameEditorData\bin\Debug\GameEditorData.dll
+E:\VS2015_Projects\GameEditor\GameEditorData\bin\Debug\GameEditorData.pdb
+E:\VS2015_Projects\GameEditor\GameEditorData\bin\Debug\EntityFramework.dll
+E:\VS2015_Projects\GameEditor\GameEditorData\bin\Debug\EntityFramework.SqlServer.dll
+E:\VS2015_Projects\GameEditor\GameEditorData\bin\Debug\GameEditorModels.dll
+E:\VS2015_Projects\GameEditor\GameEditorData\bin\Debug\Newtonsoft.Json.dll
+E:\VS2015_Projects\GameEditor\GameEditorData\bin\Debug\GameEditorModels.pdb
+E:\VS2015_Projects\GameEditor\GameEditorData\bin\Debug\EntityFramework.xml
+E:\VS2015_Projects\GameEditor\GameEditorData\bin\Debug\EntityFramework.SqlServer.xml
+E:\VS2015_Projects\GameEditor\GameEditorData\bin\Debug\Newtonsoft.Json.xml
+E:\VS2015_Projects\GameEditor\GameEditorData\obj\Debug\GameEditorData.csprojResolveAssemblyReference.cache
+E:\VS2015_Projects\GameEditor\GameEditorData\obj\Debug\GameEditorData.dll
+E:\VS2015_Projects\GameEditor\GameEditorData\obj\Debug\GameEditorData.pdb

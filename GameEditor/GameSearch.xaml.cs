@@ -25,12 +25,12 @@ namespace GameEditor
     public partial class GameSearch : Page
     {
 
-        public static ViewModel vm = new ViewModel();
+        private static ViewModel vm = new ViewModel();
         public ObservableCollection<Game> gamesforexport;
-        public ObservableCollection<Game> games = new ObservableCollection<Game>();
+        public ObservableCollection<Game> games;
         public GameSearch()
         {
-
+            
             InitializeComponent();
 
 
@@ -38,9 +38,9 @@ namespace GameEditor
 
             vm.genres = new ObservableCollection<Genre>(vm.store.ReturnGenres());
             vm.companies = new ObservableCollection<GameCompany>(vm.store.ReturnCompanies());
-
+            games=new ObservableCollection<Game>(vm.store.ReturnGames());
             DataContext = vm;
-
+            GamesList.ItemsSource = games;
 
         }
 

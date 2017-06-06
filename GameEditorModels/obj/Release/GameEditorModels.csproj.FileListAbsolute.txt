@@ -1,0 +1,7 @@
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditorModels\bin\Release\GameEditorModels.dll
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditorModels\bin\Release\GameEditorModels.pdb
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditorModels\bin\Release\Newtonsoft.Json.dll
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditorModels\bin\Release\Newtonsoft.Json.xml
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditorModels\obj\Release\GameEditorModels.dll
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditorModels\obj\Release\GameEditorModels.pdb
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditorModels\obj\Release\GameEditorModels.csprojResolveAssemblyReference.cache

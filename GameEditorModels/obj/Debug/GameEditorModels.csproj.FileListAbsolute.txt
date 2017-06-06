@@ -4,3 +4,11 @@ C:\Users\Evtim\documents\visual studio 2015\Projects\GameEditor\GameEditorModels
 C:\Users\Evtim\documents\visual studio 2015\Projects\GameEditor\GameEditorModels\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Evtim\documents\visual studio 2015\Projects\GameEditor\GameEditorModels\obj\Debug\GameEditorModels.dll
 C:\Users\Evtim\documents\visual studio 2015\Projects\GameEditor\GameEditorModels\obj\Debug\GameEditorModels.pdb
+C:\Users\Evtim\Documents\Visual Studio 2015\Projects\GameEditor\GameEditorModels\obj\Debug\GameEditorModels.csprojResolveAssemblyReference.cache
+E:\VS2015_Projects\GameEditor\GameEditorModels\bin\Debug\GameEditorModels.dll
+E:\VS2015_Projects\GameEditor\GameEditorModels\bin\Debug\GameEditorModels.pdb
+E:\VS2015_Projects\GameEditor\GameEditorModels\bin\Debug\Newtonsoft.Json.dll
+E:\VS2015_Projects\GameEditor\GameEditorModels\bin\Debug\Newtonsoft.Json.xml
+E:\VS2015_Projects\GameEditor\GameEditorModels\obj\Debug\GameEditorModels.csprojResolveAssemblyReference.cache
+E:\VS2015_Projects\GameEditor\GameEditorModels\obj\Debug\GameEditorModels.dll
+E:\VS2015_Projects\GameEditor\GameEditorModels\obj\Debug\GameEditorModels.pdb
