@@ -1,147 +1,153 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
+using System.Windows.Resources;
 using System.Windows.Shapes;
+using GameEditorData.Stores;
 using GameEditorModels;
-using Newtonsoft.Json;
+using Microsoft.Win32;
 
 namespace GameEditor
 {
     /// <summary>
-    /// Interaction logic for GameSearch.xaml
+    /// Interaction logic for NewGame.xaml
     /// </summary>
-    public partial class GameSearch : Page
+    /// 
+    /// 
+   
+    public partial class NewGame : Page
     {
 
-        private static ViewModel vm = new ViewModel();
-        public ObservableCollection<Game> gamesforexport;
-        public ObservableCollection<Game> games;
-        public GameSearch()
+        public static ViewModel VM;
+        public NewGame()
         {
-            
-            InitializeComponent();
-
-
-
-
+            ViewModel vm=new ViewModel();
+            VM = vm;
             vm.genres = new ObservableCollection<Genre>(vm.store.ReturnGenres());
             vm.companies = new ObservableCollection<GameCompany>(vm.store.ReturnCompanies());
-            games=new ObservableCollection<Game>(vm.store.ReturnGames());
+            InitializeComponent();
+
             DataContext = vm;
-            GamesList.ItemsSource = games;
 
+            Uri resourceUri = new Uri("/Images/imagebtn.png", UriKind.Relative);
+            StreamResourceInfo streamInfo = Application.GetResourceStream(resourceUri);
+
+            BitmapFrame temp = BitmapFrame.Create(streamInfo.Stream);
+            var brush = new ImageBrush();
+            brush.ImageSource = temp;
+
+            AddImage.Background = brush;
         }
-
-        private void ApplyFilters(object sender, RoutedEventArgs e)
+        private byte[] BitmapSourceToByteArray(BitmapSource image)
         {
-            var selectedcompany = CompanyBox.SelectedItem;
-            var selectedgenre = GenreBox.SelectedItem;         
-            var orderbyprice = PriceRadio.IsChecked;
-            var orderbyrate = RateRadio.IsChecked;
-            if (orderbyprice == true)
+            using (var stream = new MemoryStream())
             {
-                games =
-                    new ObservableCollection<Game>(
-                        vm.store.ReturnGames()
-                            .Where(x => x.CreatorCompany == selectedcompany && x.Genre == selectedgenre)
-                            .OrderByDescending(c => c.Price));
+                var encoder = new PngBitmapEncoder(); // or some other encoder
+                encoder.Frames.Add(BitmapFrame.Create(image));
+                encoder.Save(stream);
+                return stream.ToArray();
             }
-            else if (orderbyrate == true)
-            {
-                games =
-                    new ObservableCollection<Game>(
-                        vm.store.ReturnGames()
-                            .Where(x => x.CreatorCompany == selectedcompany && x.Genre == selectedgenre)
-                            .OrderByDescending(c => c.Rate));
-            }
-            GamesList.ItemsSource = games;
-            gamesforexport = games;
-
         }
-        
-        private void ExportJSON(object sender, RoutedEventArgs e)
+        private void AddNewGame(object sender, RoutedEventArgs e)
         {
-            var json = JsonConvert.SerializeObject(gamesforexport.Select(x => new
+            
+            Genre currentgenre = GenreNew.SelectedItem as Genre;
+            GameCompany currentCompany = CompanyNew.SelectedItem as GameCompany;
+            if (VM.store.isGameAlreadyExisting(Title.Text) == true)
             {
-                Name = x.Title,
-                Price = x.Price,
-                Rating = x.Rate,
-                CreatedBy = x.CreatorCompany.Name,
-                Genre = x.Genre.Name
-            }), Formatting.Indented);
-            GameCompany companynameexport = (GameCompany) CompanyBox.SelectedItem;
-
-            try
-            {
-                File.WriteAllText($"../../Exports/games-by-{companynameexport.Name}.json", json);
-                MessageBox.Show("Successfully exported your games! Look in Exports folder :)");
-            }
-            catch (Exception exc)
-            {
-
-                MessageBox.Show("Oops! Something went wrong :(");
-            }
-
-        }
-
-        private void EditSelected(object sender, RoutedEventArgs e)
-        {
-            var currentgame = (Game) GamesList.SelectedItem;
-            if (currentgame == null)
-            {
-                MessageBox.Show("No game selected");
-            }
-            else
-            {
-                var test = ((MainWindow)Application.Current.MainWindow);
-
-                GameEditWindow win2 = new GameEditWindow(currentgame, vm.store);
-
-                win2.CompanyEdit.SelectedIndex = this.CompanyBox.SelectedIndex;
-                win2.GenreEdit.SelectedIndex = this.GenreBox.SelectedIndex;
-                win2.Show();
-            }
-         
-
-        }
-
-        private void DeleteSelected(object sender, RoutedEventArgs e)
-        {
-            var gamefordelete = (Game) GamesList.SelectedItem;
-            if (gamefordelete == null)
-            {
-                MessageBox.Show("No game selected");
+                MessageBox.Show("A game with the same title already exists!");
 
             }
             else
             {
-                try
+                if (currentgenre == null || currentCompany == null ||
+               Description.Text == null || Price.Text == null || Price.Text.ToString().All(char.IsDigit) == false ||
+               Rating.Value == null || Title.Text == null)
                 {
-                    vm.store.DeleteEntry(gamefordelete);
-                    games.Remove(gamefordelete);
-                    MessageBox.Show("Selected game has been deleted!");
-                    
+                    MessageBox.Show("Some of the input data is invalid!");
                 }
-                catch (Exception exc)
+                else
                 {
+                    var currentcompanyid = VM.store.ReturnGameCompanyId(currentCompany.Name);
+                    var currentgenreid = VM.store.ReturnGenreId(currentgenre.Name);
+                    var imagefrombyte = BitmapSourceToByteArray((BitmapSource)ImageToImport.Source);
+                    Game gametoadd = new Game()
+                    {
+                        CreatorCompany = currentCompany,
+                        CreatorCompanyId = currentcompanyid,
+                        DateCreated = DateTime.Parse(DateCreated.Text),
+                        Description = Description.Text,
+                        Genre = currentgenre,
+                        GenreId = currentgenreid,
+                        Price = float.Parse(Price.Text),
+                        Rate = (int)Rating.Value,
+                        Title = Title.Text,
+                        Image = imagefrombyte
+                    };
 
-                    throw exc;
+                    gametoadd.CreatorCompany.GamesProduced.Add(gametoadd);
+                    gametoadd.Genre.GamesOfGenre.Add(gametoadd);
+                    VM.store.AddGame(gametoadd);
+                    MessageBox.Show("Game successfully added do database! :)");
+                    Description.Text = String.Empty;
+                    Price.Text = String.Empty;
+                    Title.Text = String.Empty;
+                    DateCreated.SelectedDate = DateTime.Now;
+                    Rating.Value = 0;
+                    ImageToImport.Source = null;
+                    GenreNew.SelectedValue = null;
+                    CompanyNew.SelectedValue = null;
                 }
             }
-          
            
+           
+            
+           
+        }
+       
+
+        private void ImageSelect(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openfile = new OpenFileDialog();
+            openfile.DefaultExt = "*.jpg";
+            openfile.Filter = "Image Files|*.jpg";
+            Nullable<bool> result = openfile.ShowDialog();
+            if (File.Exists(openfile.FileName))
+            {
+                ImageToImport.Source = new BitmapImage(new Uri(openfile.FileName));
+
+            }
+           
+        }
+
+      
+
+        private void ResetGame(object sender, RoutedEventArgs e)
+        {
+            Description.Text = String.Empty;
+            Price.Text = String.Empty;
+            Title.Text = String.Empty;
+            DateCreated.SelectedDate = DateTime.Now;
+            Rating.Value = 0;
+            ImageToImport.Source = null;
+           
+            GenreNew.SelectedValue = null;
+            CompanyNew.SelectedValue = null;
         }
     }
 }
