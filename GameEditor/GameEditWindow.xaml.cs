@@ -25,16 +25,7 @@ namespace GameEditor
     /// 
     public partial class GameEditWindow : Window
     {
-        public class EditModel
-        {
-            public EditModel()
-            {
-                this.genres = new ObservableCollection<Genre>();
-                this.companies = new ObservableCollection<GameCompany>();
-            }
-            public ObservableCollection<Genre> genres { get; set; }
-            public ObservableCollection<GameCompany> companies { get; set; }
-        }
+      
 
         private Game gameforsave;
         private EditModel em=new EditModel();
