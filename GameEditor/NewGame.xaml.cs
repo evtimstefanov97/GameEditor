@@ -33,7 +33,7 @@ namespace GameEditor
     public partial class NewGame : Page
     {
 
-        public static ViewModel VM;
+        private static ViewModel VM;
         public NewGame()
         {
             ViewModel vm=new ViewModel();
